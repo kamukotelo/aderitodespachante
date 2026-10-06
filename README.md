@@ -26,6 +26,9 @@ O site não inclui simuladores nem formulários. Toda a comunicação é iniciad
 
 ```text
 index.html
+servicos.html
+compromisso.html
+contactos.html
 assets/css/styles.css
 assets/js/main.js
 assets/images/
