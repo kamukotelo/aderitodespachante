@@ -217,6 +217,11 @@ ul {
   color: var(--primary);
 }
 
+.nav a[aria-current="page"] {
+  color: var(--primary);
+  font-weight: 800;
+}
+
 .btn-whatsapp-nav {
   display: inline-flex;
   align-items: center;
@@ -530,6 +535,93 @@ section {
   gap: 0.6rem;
 }
 
+/* Página detalhada de serviços */
+.services-page {
+  background: #f8fafc;
+}
+
+.services-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem;
+}
+
+.service-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  padding: 2.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.service-detail-card.featured-detail {
+  border-color: #93c5fd;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%);
+}
+
+.service-detail-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.service-detail-head .icon-box {
+  flex: 0 0 56px;
+  margin-bottom: 0;
+  font-size: 1.55rem;
+}
+
+.service-number {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.service-detail-card h3 {
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.service-lead {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.service-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.service-columns h4 {
+  margin-bottom: 0.75rem;
+  color: var(--primary-dark);
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.service-note {
+  padding: 1rem 1.1rem;
+  border-left: 4px solid var(--primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--primary-light);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.service-note strong {
+  color: var(--primary-dark);
+}
+
 /* ==========================================================================
    Commitment / Diferenciais
    ========================================================================== */
@@ -603,7 +695,7 @@ section {
 
 .contact-cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -678,7 +770,7 @@ section {
 }
 
 .contact-card.full-width {
-  grid-column: span 3;
+  grid-column: span 2;
   padding: 1.75rem 1.5rem;
 }
 
@@ -817,6 +909,10 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .services-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
   .commitment-grid {
     grid-template-columns: 1fr;
   }
@@ -876,24 +972,7 @@ section {
   }
 
   .nav {
-    gap: 0;
-  }
-
-  .nav > a:not(.btn-whatsapp-nav) {
     display: none;
-  }
-
-  .btn-whatsapp-nav {
-    padding: 0.55rem 0.8rem;
-  }
-
-  .btn-whatsapp-nav span {
-    font-size: 0;
-  }
-
-  .btn-whatsapp-nav span::after {
-    content: 'Contactar';
-    font-size: 0.82rem;
   }
 
   .hero {
@@ -902,6 +981,15 @@ section {
 
   .service-card {
     padding: 1.5rem;
+  }
+
+  .service-detail-card {
+    padding: 1.4rem;
+  }
+
+  .service-columns {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .contact-box h2,
