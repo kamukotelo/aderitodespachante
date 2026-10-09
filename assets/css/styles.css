@@ -86,9 +86,10 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: none;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding-right: clamp(1.25rem, 2.5vw, 3rem);
+  padding-left: clamp(1.25rem, 2.5vw, 3rem);
 }
 
 /* ==========================================================================
@@ -175,13 +176,11 @@ ul {
 }
 
 .brand-logo {
-  width: 52px;
-  height: 52px;
+  width: 68px;
+  height: 68px;
   object-fit: contain;
   background: #fff;
-  border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 2px;
 }
 
 .brand-text h1 {
@@ -249,11 +248,11 @@ ul {
   background: linear-gradient(135deg, #051d3b 0%, #004ea8 65%, #082954 100%);
   color: #ffffff;
   padding: 4.5rem 0 3.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-container {
-  max-width: 1440px;
+  max-width: none;
 }
 
 .hero-badge {
@@ -278,6 +277,7 @@ ul {
 }
 
 .hero-title {
+  max-width: 1050px;
   font-size: 2.85rem;
   font-weight: 800;
   line-height: 1.18;
@@ -293,13 +293,13 @@ ul {
   font-size: 1.15rem;
   color: #e2e8f0;
   line-height: 1.6;
-  margin: 0 auto 2.25rem;
-  max-width: 980px;
+  margin: 0 0 2.25rem;
+  max-width: 1050px;
 }
 
 .hero-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -380,9 +380,9 @@ section {
 }
 
 .section-title-wrap {
-  text-align: center;
-  max-width: 920px;
-  margin: 0 auto 3rem;
+  text-align: left;
+  max-width: 1100px;
+  margin: 0 0 3rem;
 }
 
 .tag {
@@ -643,7 +643,7 @@ section {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 2rem 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .commit-item .num {
@@ -675,9 +675,9 @@ section {
 }
 
 .contact-box {
-  text-align: center;
-  max-width: 1280px;
-  margin: 0 auto;
+  text-align: left;
+  max-width: none;
+  margin: 0;
 }
 
 .contact-box h2 {
@@ -707,8 +707,8 @@ section {
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   transition: var(--transition);
   color: #ffffff;
 }
@@ -777,7 +777,7 @@ section {
 .email-links {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
@@ -821,12 +821,11 @@ section {
 }
 
 .footer-logo {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
   background: #fff;
   border-radius: var(--radius-sm);
-  padding: 2px;
 }
 
 .footer-brand h3 {
