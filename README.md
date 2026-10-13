@@ -7,9 +7,9 @@ Website institucional simples e responsivo, orientado à apresentação dos serv
 O visitante encontra imediatamente:
 
 - identificação profissional e número da cédula;
-- serviços de despacho marítimo, aéreo e terrestre;
+- serviços de despacho marítimo (Porto de Luanda e Porto Amboim), aéreo e terrestre;
 - tramitação de regimes aduaneiros;
-- apoio aos sectores mineiro e petrolífero;
+- autorizações de importação e exportação (ANTT: importação de viaturas, sector petrolífero e mineiro);
 - licenciamento de facturas no MINCO;
 - contacto por WhatsApp, telefone ou e-mail.
 
